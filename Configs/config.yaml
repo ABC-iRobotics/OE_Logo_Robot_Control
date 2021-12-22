@@ -1,0 +1,28 @@
+IP: "192.168.1.104" # real: "192.168.1.104", ursim: "192.168.31.129"
+
+photo_jpose: [0.0003180853964295238, -1.509143666630127, 1.9175460974322718, -1.9791599712767542, -1.5711048285113733, -3.142313067113058]  # joint variables
+place_jpose: [0.546464741230011, -1.078759328728058, 1.544600788746969, -2.0377570591368617, -1.5714314619647425, -2.5961108843432825]  # joint variables
+
+camera_to_tcp_transform: [32, 39, -80, 0, 0, -3.14159265] # in mm and radian
+tcp_to_gripper_transform: [0, 0, 148, 0, 0, 0] # in mm and radian
+
+camera_above_pose_height: 170 # Camera height when take the second photo in mm
+gripper_above_pose_height: 20 # Gripper height before picking the object in mm
+box_height: 100 # Height of the box where we put the objects in mm
+object_height: 5 # Height of the objects in mm
+
+# Robot move accelerations and velocities
+photo_pose_acc: 0.3
+photo_pose_vel: 0.7
+place_pose_acc: 0.3
+place_pose_vel: 0.7
+above_cam_acc: 0.3
+above_cam_vel: 0.7
+above_gripper_acc: 0.3
+above_gripper_vel: 0.7
+pick_down_acc: 0.01
+pick_down_vel: 0.01
+pick_up_acc: 0.05
+pick_up_vel: 0.3
+
+
