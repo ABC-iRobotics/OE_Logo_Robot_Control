@@ -22,7 +22,7 @@ class URController:
         self.IP = configs['IP']
         self.photo_pose = configs['photo_jpose']
         self.place_pose = configs['place_jpose']
-        self.end_pose = configs['end_jpose']
+        # self.end_pose = configs['end_jpose']
 
         self.camera_to_tcp_transform = configs['camera_to_tcp_transform']
         self.tcp_to_gripper_transform = configs['tcp_to_gripper_transform']
@@ -210,9 +210,10 @@ class URController:
         self.rob.close()
 
 if __name__ == '__main__':
-    robot_controller = URController('OE_Logo_Robot_Control\Configs\config.yaml')
+    robot_controller = URController('Configs/config.yaml')
     # robot_controller.move_to_photo_pose()
     print(robot_controller.rob.getj())
+    robot_controller.move_to_photo_pose()
 
         
     robot_controller.disconnect()
